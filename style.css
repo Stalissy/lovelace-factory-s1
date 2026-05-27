@@ -1,0 +1,185 @@
+/* =========================================
+   EXERCICE 2 — Mise en page avec CSS
+   Lovelace Factory
+   ========================================= */
+
+/* -----------------------------------------
+   1. RESET ET BASE
+----------------------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* -----------------------------------------
+   2. HEADER ET NAVIGATION
+----------------------------------------- */
+header {
+  background-color: #1f2937;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #60a5fa;
+}
+
+/* -----------------------------------------
+   3. SECTION HERO
+----------------------------------------- */
+.hero {
+  background-color: #2563eb;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero .accroche {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* -----------------------------------------
+   4. BOUTON PRINCIPAL
+----------------------------------------- */
+.bouton-principal {
+  display: inline-block;
+  background-color: white;
+  color: #2563eb;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.bouton-principal:hover {
+  background-color: #dbeafe;
+}
+
+/* -----------------------------------------
+   5. SECTION FONCTIONNALITÉS
+----------------------------------------- */
+.fonctionnalites {
+  padding: 60px 20px;
+}
+
+.fonctionnalites h2 {
+  margin-bottom: 20px;
+  color: #2563eb;
+}
+
+.liste-features {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.liste-features li {
+  margin-bottom: 12px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.liste-features li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #2563eb;
+}
+
+/* -----------------------------------------
+   6. SECTION ÉQUIPE
+----------------------------------------- */
+.equipe {
+  background-color: #e5e7eb;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.equipe img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+/* -----------------------------------------
+   7. FORMULAIRE DE CONTACT
+----------------------------------------- */
+.contact {
+  padding: 60px 20px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact label {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.contact textarea {
+  min-height: 120px;
+}
+
+.contact button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contact button:hover {
+  background-color: #1d4ed8;
+}
+
+/* -----------------------------------------
+   8. FOOTER
+----------------------------------------- */
+footer {
+  background-color: #1f2937;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
